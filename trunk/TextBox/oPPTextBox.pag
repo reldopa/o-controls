@@ -1,0 +1,362 @@
+VERSION 5.00
+Begin VB.PropertyPage oPPTextBox 
+   Caption         =   "General"
+   ClientHeight    =   4380
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5925
+   BeginProperty Font 
+      Name            =   "Tahoma"
+      Size            =   8.25
+      Charset         =   0
+      Weight          =   400
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   LockControls    =   -1  'True
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   4380
+   ScaleWidth      =   5925
+   Begin VB.TextBox txtGridWidth 
+      Alignment       =   1  'Right Justify
+      Height          =   315
+      Left            =   4740
+      TabIndex        =   24
+      Text            =   "4260"
+      Top             =   3750
+      Width           =   1005
+   End
+   Begin VB.TextBox txtGridHeight 
+      Alignment       =   1  'Right Justify
+      Height          =   315
+      Left            =   2850
+      TabIndex        =   22
+      Text            =   "1905"
+      Top             =   3750
+      Width           =   975
+   End
+   Begin VB.TextBox txtHeadlines 
+      Alignment       =   1  'Right Justify
+      Height          =   315
+      Left            =   1470
+      TabIndex        =   18
+      Text            =   "1"
+      Top             =   3750
+      Width           =   375
+   End
+   Begin VB.TextBox txtSQLScript 
+      Height          =   315
+      Left            =   1470
+      TabIndex        =   17
+      Top             =   3330
+      Width           =   4275
+   End
+   Begin VB.TextBox txtConnectionStrings 
+      Height          =   315
+      Left            =   1470
+      TabIndex        =   16
+      Top             =   2910
+      Width           =   4275
+   End
+   Begin VB.TextBox txtPasswordchar 
+      Height          =   330
+      Left            =   3030
+      MaxLength       =   1
+      TabIndex        =   9
+      Top             =   2385
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkMultiLine 
+      Caption         =   "MultiLine"
+      Height          =   285
+      Left            =   3060
+      TabIndex        =   8
+      Top             =   1125
+      Visible         =   0   'False
+      Width           =   2700
+   End
+   Begin VB.ComboBox cmbDataType 
+      Height          =   315
+      ItemData        =   "oPPTextBox.pgx":0000
+      Left            =   3060
+      List            =   "oPPTextBox.pgx":0002
+      Style           =   2  'Dropdown List
+      TabIndex        =   7
+      Top             =   1755
+      Width           =   2655
+   End
+   Begin VB.TextBox txtDecimalPlace 
+      Height          =   330
+      Left            =   3060
+      TabIndex        =   6
+      Top             =   750
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkMandatory 
+      Caption         =   "Mandatory"
+      Height          =   285
+      Left            =   3060
+      TabIndex        =   5
+      Top             =   150
+      Width           =   2700
+   End
+   Begin VB.TextBox txtMaximumValue 
+      Height          =   330
+      Left            =   150
+      TabIndex        =   4
+      Top             =   2400
+      Width           =   2700
+   End
+   Begin VB.TextBox txtMaxLength 
+      Height          =   330
+      Left            =   150
+      TabIndex        =   3
+      Top             =   1755
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkAllCaps 
+      Caption         =   "AllCaps"
+      Height          =   285
+      Left            =   150
+      TabIndex        =   2
+      Top             =   1155
+      Width           =   2700
+   End
+   Begin VB.TextBox txtText 
+      Height          =   330
+      Left            =   150
+      TabIndex        =   1
+      Top             =   750
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkEnabled 
+      Caption         =   "Enabled"
+      Height          =   285
+      Left            =   150
+      TabIndex        =   0
+      Top             =   150
+      Visible         =   0   'False
+      Width           =   1845
+   End
+   Begin VB.Label Label10 
+      Caption         =   "Grid Width"
+      Height          =   195
+      Left            =   3900
+      TabIndex        =   25
+      Top             =   3780
+      Width           =   1275
+   End
+   Begin VB.Label Label9 
+      Caption         =   "Grid Height"
+      Height          =   195
+      Left            =   1950
+      TabIndex        =   23
+      Top             =   3780
+      Width           =   1275
+   End
+   Begin VB.Label Label8 
+      Caption         =   "Headlines"
+      Height          =   195
+      Left            =   60
+      TabIndex        =   21
+      Top             =   3780
+      Width           =   1275
+   End
+   Begin VB.Label Label3 
+      Caption         =   "SQL Script"
+      Height          =   195
+      Left            =   60
+      TabIndex        =   20
+      Top             =   3360
+      Width           =   1275
+   End
+   Begin VB.Label Label2 
+      Caption         =   "Connection String"
+      Height          =   195
+      Left            =   60
+      TabIndex        =   19
+      Top             =   2940
+      Width           =   1275
+   End
+   Begin VB.Label lblPasswordchar 
+      Caption         =   "Passwordchar:"
+      Height          =   240
+      Left            =   3030
+      TabIndex        =   15
+      Top             =   2160
+      Width           =   2700
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Data Type:"
+      Height          =   240
+      Left            =   3060
+      TabIndex        =   14
+      Top             =   1500
+      Width           =   2700
+   End
+   Begin VB.Label lblDecimalPlace 
+      Caption         =   "DecimalPlace:"
+      Height          =   240
+      Left            =   3060
+      TabIndex        =   13
+      Top             =   495
+      Width           =   2700
+   End
+   Begin VB.Label lblMaximumValue 
+      Caption         =   "MaximumValue:"
+      Height          =   240
+      Left            =   150
+      TabIndex        =   12
+      Top             =   2145
+      Width           =   2700
+   End
+   Begin VB.Label lblMaxLength 
+      Caption         =   "MaxLength:"
+      Height          =   240
+      Left            =   150
+      TabIndex        =   11
+      Top             =   1500
+      Width           =   2700
+   End
+   Begin VB.Label lblText 
+      Caption         =   "Text:"
+      Height          =   240
+      Left            =   150
+      TabIndex        =   10
+      Top             =   495
+      Width           =   2700
+   End
+End
+Attribute VB_Name = "oPPTextBox"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub txtGridHeight_Change()
+    Changed = True
+End Sub
+
+Private Sub txtGridWidth_Change()
+    Changed = True
+End Sub
+''
+''Private Sub txtNoOfColumns_Change()
+''    Changed = True
+''End Sub
+
+Private Sub txtHeadlines_Change()
+    Changed = True
+End Sub
+
+'Private Sub txtNoOfColumns_LostFocus()
+'    If txtNoOfColumns < 2 Then
+'        MsgBox "Invalid Entry, minimum of 2 columns allowed."
+'        txtNoOfColumns = 2
+'        txtNoOfColumns.SetFocus
+'    End If
+'End Sub
+
+Private Sub txtSQLScript_Change()
+    Changed = True
+End Sub
+
+Private Sub txtConnectionStrings_Change()
+    Changed = True
+End Sub
+
+Private Sub txtPasswordchar_Change()
+    Changed = True
+End Sub
+
+
+'Private Sub chkMultiLine_Click()
+'    Changed = True
+'End Sub
+
+Private Sub cmbDataType_Change()
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_Initialize()
+    cmbDataType.Clear
+    cmbDataType.AddItem ("0-Alphanumeric")
+    cmbDataType.AddItem ("1-Numeric")
+End Sub
+
+Private Sub txtDecimalPlace_Change()
+    Changed = True
+End Sub
+
+Private Sub chkMandatory_Click()
+    Changed = True
+    If chkMandatory = 1 Then
+        chkAllCaps = 1
+    Else
+        chkAllCaps = 0
+    End If
+End Sub
+
+Private Sub txtMaximumValue_Change()
+    Changed = True
+End Sub
+
+Private Sub txtMaxLength_Change()
+    Changed = True
+End Sub
+
+Private Sub chkAllCaps_Click()
+    Changed = True
+End Sub
+
+Private Sub txtText_Change()
+    Changed = True
+End Sub
+
+'Private Sub chkEnabled_Click()
+'    Changed = True
+'End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).Passwordchar = txtPasswordchar.Text
+    'SelectedControls(0).MultiLine = (chkMultiLine.Value = vbChecked)
+    SelectedControls(0).DecimalPlace = txtDecimalPlace.Text
+    SelectedControls(0).Mandatory = (chkMandatory.Value = vbChecked)
+    SelectedControls(0).MaximumValue = txtMaximumValue.Text
+    SelectedControls(0).MaxLength = txtMaxLength.Text
+    SelectedControls(0).Text = txtText.Text
+    'SelectedControls(0).Enabled = (chkEnabled.Value = vbChecked)
+    SelectedControls(0).DataType = IIf(cmbDataType = "0-Alphanumeric", AlphaNumeric, Numeric)
+    SelectedControls(0).AllCaps = (chkAllCaps.Value = vbChecked)
+    
+    SelectedControls(0).ConnectionStrings = txtConnectionStrings.Text
+    SelectedControls(0).SQLScript = txtSQLScript.Text
+    'SelectedControls(0).NoOfColumns = txtNoOfColumns.Text
+    SelectedControls(0).GridHeight = txtGridHeight.Text
+    SelectedControls(0).GridWidth = txtGridWidth.Text
+    SelectedControls(0).Headlines = txtHeadlines.Text
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+
+    chkAllCaps.Value = (SelectedControls(0).AllCaps And vbChecked)
+    txtPasswordchar.Text = SelectedControls(0).Passwordchar
+    'chkMultiLine.Value = (SelectedControls(0).MultiLine And vbChecked)
+    txtDecimalPlace.Text = SelectedControls(0).DecimalPlace
+    chkMandatory.Value = (SelectedControls(0).Mandatory And vbChecked)
+    txtMaximumValue.Text = SelectedControls(0).MaximumValue
+    txtMaxLength.Text = SelectedControls(0).MaxLength
+    txtText.Text = SelectedControls(0).Text
+    'chkEnabled.Value = (SelectedControls(0).Enabled And vbChecked)
+    cmbDataType = IIf(SelectedControls(0).DataType = 0, "0-Alphanumeric", "1-Numeric")
+    chkAllCaps.Value = (SelectedControls(0).AllCaps And vbChecked)
+
+    txtConnectionStrings.Text = SelectedControls(0).ConnectionStrings
+    txtSQLScript.Text = SelectedControls(0).SQLScript
+    'txtNoOfColumns.Text = SelectedControls(0).NoOfColumns
+    txtGridHeight.Text = SelectedControls(0).GridHeight
+    txtGridWidth.Text = SelectedControls(0).GridWidth
+    txtHeadlines.Text = SelectedControls(0).Headlines
+End Sub
